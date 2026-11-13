@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>rs.atelje212.repertoire-checker</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>/Users/dragan/Development/repertoire-checker/check_december.py</string>
+  </array>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>NTFY_TOPIC</key>
+    <string>YOUR_NTFY_TOPIC</string>
+    <key>STATE_FILE</key>
+    <string>/Users/dragan/Development/repertoire-checker/.found</string>
+  </dict>
+  <key>StartInterval</key>
+  <integer>900</integer>
+  <key>RunAtLoad</key>
+  <true/>
+  <key>StandardOutPath</key>
+  <string>/tmp/repertoire-checker.log</string>
+  <key>StandardErrorPath</key>
+  <string>/tmp/repertoire-checker.log</string>
+</dict>
+</plist>
